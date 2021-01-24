@@ -12,36 +12,39 @@
   <tbody>
     <tr>
       <td >{{nombre}}</td>
-      <td> <strong >uppercase</strong></td>
+      <td> <strong title="Poner texto en mayuscula">uppercase</strong></td>
       <td>{{nombre | uppercase}}</td>
     </tr>
     <tr>
       <td >{{nombre}}</td>
-      <td><strong>uppercase</strong></td>
+      <td><strong title="Poner texto en minuscula">uppercase</strong></td>
       <td>{{nombre | lowercase}}</td>
     </tr>
     <tr>
       <td >{{nombre}}</td>
-      <td><strong>slice:3</strong></td>
+      <td><strong title="Corta el texto desde el numero indicado">slice:3</strong></td>
       <td>{{nombre | slice:3}}</td>
     </tr>
     <tr>
       <td >{{nombre}}</td>
-      <td><strong>slice: 0:3</strong></td>
+      <td><strong title="Corta el texto desde el un rango indicado">slice: 0:3</strong></td>
       <td>{{nombre | slice:0:3}}</td>
     </tr>
     <tr>
       <td >{{arreglo}}</td>
-      <td><strong>slice: 1:5</strong></td>
+      <td><strong title="Corta el array desde el un rango indicado" >slice: 1:5</strong></td>
       <td>{{arreglo | slice:1:5}}</td>
     </tr>
   </tbody>
 </table>
 <h1>Tips</h1>
-<p><strong style="color: rgb(233, 47, 47);">No sale error</strong></p>
-<h4>Slice</h4>
+<p><strong style="color: rgb(233, 47, 47);">No sale error</strong>, se puede generar un rango con el ngfor y no sale error</p>
+<h4 title="se puede generar un rango con el ngfor y no sale error" >Slice</h4>
 <table>
   <ul>
     <li *ngFor="let item of arreglo | slice:5:20">{{item}}</li>
   </ul>
 </table>
+
+
+
