@@ -52,13 +52,33 @@
     </tr>
     <tr>
       <td >{{porcentaje}}</td>
-      <td><strong title="" >number</strong></td>
+      <td><strong title="Pasa a porcentaje" >percent</strong></td>
       <td>{{porcentaje | percent}}</td>
     </tr>
     <tr>
       <td >{{porcentaje}}</td>
-      <td><strong title="" >number</strong></td>
+      <td><strong title="Pasa a porcentaje con decimales" >percent: '2.2-2'</strong></td>
       <td>{{porcentaje | percent:'2.2-2'}}</td>
+    </tr>
+    <tr>
+      <td >{{salario}}</td>
+      <td><strong title="Pasa numemro a moneda" >currency</strong></td>
+      <td>{{salario | currency}}</td>
+    </tr>
+    <tr>
+      <td >{{salario}}</td>
+      <td><strong title="Pasa numemro a moneda,mirar en internet el ISO 4217 para ver el codigo de pais" >currency: 'COL'</strong></td>
+      <td>{{salario | currency:'COP'}}</td>
+    </tr>
+    <tr>
+      <td >{{salario}}</td>
+      <td><strong title="Pasa numemro a moneda,mirar en internet el ISO 4217 para ver el codigo de pais y se puede perssonalizar" >currency: 'COL'</strong></td>
+      <td>{{salario | currency:'COP $'}}</td>
+    </tr>
+    <tr>
+      <td >{{salario}}</td>
+      <td><strong title="Pasa numemro a moneda,mirar en internet el ISO 4217 para ver el codigo de pais y se puede redondear" >currency: 'CAD'</strong></td>
+      <td>{{salario | currency:'CAD$':'symbol':'.0-0'}}</td>
     </tr>
   </tbody>
 </table>
