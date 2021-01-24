@@ -35,6 +35,21 @@
       <td><strong title="Corta el array desde el un rango indicado" >slice: 1:5</strong></td>
       <td>{{arreglo | slice:1:5}}</td>
     </tr>
+    <tr>
+      <td >{{PI}}</td>
+      <td><strong title="Redondea numeros . significa toda la parte entera 0-0 nada de decimales" >number</strong></td>
+      <td>{{PI | number:'.0-0'}}</td>
+    </tr>
+    <tr>
+      <td >{{PI}}</td>
+      <td><strong title="Redondea numeros 3. significa 3  partes enteras, 0-0 nada de decimales" >number</strong></td>
+      <td>{{PI | number:'3.0-0'}}</td>
+    </tr>
+    <tr>
+      <td >{{PI}}</td>
+      <td><strong title="Redondea numeros . significa toda la parte entera 0-2 dos decimales" >number</strong></td>
+      <td>{{PI | number:'.0-2'}}</td>
+    </tr>
   </tbody>
 </table>
 <h1>Tips</h1>
