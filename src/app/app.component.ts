@@ -14,7 +14,7 @@ export class AppComponent {
   salario:number=1234.5;
   fecha:Date = new Date('2020-03-12');
   idioma: string = 'fr';
-
+  videoUrl:string ='https://www.youtube.com/embed/_bftuFONsTo';
   heroe = {
     nombre: 'Logan',
     clave: 'Wolwerine',
