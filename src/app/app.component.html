@@ -126,6 +126,15 @@
       </td>
 
     </tr>
+    <tr>
+      <td >{{nombre}}</td>
+      <td>
+         <strong title="Poner texto en mayuscula">Contrasena: Activar = {{activar}}</strong>
+        <br>
+        <button type="button" (click)="activar=!activar" class="mr-1 btn btn-primary">Activar/Desactivar</button>
+        </td>
+      <td>{{nombre | contrasena:activar}}</td>
+    </tr>
   </tbody>
 </table>
 <h1>Tips</h1>

@@ -6,15 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  nombre:string = 'Capitán América';
-  nombre2:string = 'yEckSiN mAUriCIo ZuÑiGA gUErREO'
-  arreglo = [1,2,3,4,5,6,7,8,9,10];
-  PI:number = Math.PI;
-  porcentaje:number=0.234;
-  salario:number=1234.5;
-  fecha:Date = new Date('2020-03-12');
-  idioma: string = 'fr';
-  videoUrl:string ='https://www.youtube.com/embed/_bftuFONsTo';
+  nombre:string     = 'Capitán América';
+  nombre2:string    = 'yEckSiN mAUriCIo ZuÑiGA gUErREO'
+  arreglo           = [1,2,3,4,5,6,7,8,9,10];
+  PI:number         = Math.PI;
+  porcentaje:number =0.234;
+  salario:number    =1234.5;
+  fecha:Date        = new Date('2020-03-12');
+  activar:boolean   = true;
+  idioma: string    = 'fr';
+  videoUrl:string   ='https://www.youtube.com/embed/_bftuFONsTo';
+  
   heroe = {
     nombre: 'Logan',
     clave: 'Wolwerine',
