@@ -105,6 +105,22 @@
       <td><strong title="Editar formato personalizada" >date*</strong> Requiere instalacion de <strong>ng add @angular/localize</strong> para cambiar idioma</td>
       <td>{{fecha |date:'MMMM - dd'}}</td>
     </tr>
+    <tr>
+      <td >{{fecha}}</td>
+      <td><strong title="Editar formato personalizada" >date*</strong> Requiere instalacion de <strong>ng add @angular/localize</strong> para cambiar idioma</td>
+      <td>{{fecha |date:'MMMM - dd':'':'fr'}}</td>
+    </tr>
+    <tr>
+      <td >{{fecha}}</td>
+      <td><strong title="Editar formato personalizada" >date: {{idioma}} *</strong> Requiere instalacion de <strong>ng add @angular/localize</strong> para cambiar idioma dinamico</td>
+      <td>{{fecha |date:'MMMM - dd':'':idioma}}
+        <br>
+        <button type="button" (click)="idioma='es'" class="mr-1 btn btn-primary">Español</button>
+        <button type="button" (click)="idioma='en'"  class="mr-1 btn btn-secondary">Ingles</button>
+        <button type="button" (click)="idioma='fr'"  class="mr-1 btn btn-success">Frances</button>
+      </td>
+
+    </tr>
   </tbody>
 </table>
 <h1>Tips</h1>
@@ -127,3 +143,4 @@
 </div>
 
 
+<button type="button" class="mr-1 btn btn-primary">Español</button>

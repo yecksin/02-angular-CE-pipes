@@ -14,3 +14,10 @@ registerLocaleData(localEs)         => ahi mismo debajo de los import de arriba
     provide: LOCALE_ID,
     useValue: 'es'
   }],
+
+## poner mas idomas 
+se hace nuevamente sin borrar lo que ya se importó
+
+import localFr from '@angular/common/locales/fr'
+registerLocaleData(localFr)
+ <td>{{fecha |date:'MMMM - dd':'':'fr'}}</td>
