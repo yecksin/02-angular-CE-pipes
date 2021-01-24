@@ -4,9 +4,9 @@
 <table class="table">
   <thead class="table-dark">
     <tr>
-      <th scope="col">Variable</th>
+      <th scope="col">Texto/Variable</th>
       <th scope="col">Pipe</th>
-      <th scope="col">Salida</th>
+      <th scope="col">Salida/Resultado</th>
     </tr>
   </thead>
   <tbody>
@@ -37,18 +37,28 @@
     </tr>
     <tr>
       <td >{{PI}}</td>
-      <td><strong title="Redondea numeros . significa toda la parte entera 0-0 nada de decimales" >number</strong></td>
+      <td><strong title="Redondea numeros . significa toda la parte entera 0-0 nada de decimales" >number: '.0-0'</strong></td>
       <td>{{PI | number:'.0-0'}}</td>
     </tr>
     <tr>
       <td >{{PI}}</td>
-      <td><strong title="Redondea numeros 3. significa 3  partes enteras, 0-0 nada de decimales" >number</strong></td>
+      <td><strong title="Redondea numeros 3. significa 3  partes enteras, 0-0 nada de decimales" >number: '3.0-0'</strong></td>
       <td>{{PI | number:'3.0-0'}}</td>
     </tr>
     <tr>
       <td >{{PI}}</td>
-      <td><strong title="Redondea numeros . significa toda la parte entera 0-2 dos decimales" >number</strong></td>
+      <td><strong title="Redondea numeros . significa toda la parte entera 0-2 dos decimales" >number: '.0-2'</strong></td>
       <td>{{PI | number:'.0-2'}}</td>
+    </tr>
+    <tr>
+      <td >{{porcentaje}}</td>
+      <td><strong title="" >number</strong></td>
+      <td>{{porcentaje | percent}}</td>
+    </tr>
+    <tr>
+      <td >{{porcentaje}}</td>
+      <td><strong title="" >number</strong></td>
+      <td>{{porcentaje | percent:'2.2-2'}}</td>
     </tr>
   </tbody>
 </table>
