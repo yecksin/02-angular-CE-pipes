@@ -12,6 +12,7 @@ export class AppComponent {
   PI:number = Math.PI;
   porcentaje:number=0.234;
   salario:number=1234.5;
+  fecha:Date = new Date('2020-03-12');
 
   heroe = {
     nombre: 'Logan',
@@ -28,5 +29,7 @@ export class AppComponent {
       resolve('llego la data');
     }, 2000);
   })
+
+  
 
 }
